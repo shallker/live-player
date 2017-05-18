@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- video.js style -->
+    <link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+    <script src="http://vjs.zencdn.net/5.19.2/video.js"></script>
+    <!--<script type="text/javascript" src="js/videojs/videojs-media-sources.js"></script>-->
+    <!--<script type="text/javascript" src="js/videojs/videojs.hls.min.js"></script>-->
+
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="360" poster="img/html5-video.png" data-setup='{"techOrder": ["html5", "flash"]}'>
+      <source src="rtmp://streaming06.axeweb.be:1935/live/direct.stream" type='rtmp/mp4'/>
+
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+  </body>
+</html>
